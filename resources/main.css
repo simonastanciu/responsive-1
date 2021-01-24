@@ -1,0 +1,388 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.logo, .desktop-menu, h1, h2, .weekend-title, .week-title, .design-holiday-title, button {
+    font-family: 'EB Garamond', serif;
+}
+
+.aside-content-wrapper, .weekend-wrapper p, .week-wrapper p, .design-holiday-wrapper p {
+    font-family: 'GFS Neohellenic', sans-serif;
+}
+
+/*MENU*/
+header {
+    height: 100px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-menu i {
+    display: none;
+    font-size: 30px;
+    color: #a0a0a0;
+    padding: 20px;
+    justify-content: center;
+    text-align: end;
+}
+
+.logo {
+    align-self: center;
+    box-sizing: border-box;
+    margin-left: 70px;
+    padding: 0 25px;
+    font-size: 35px;
+    font-weight: 800;
+    width: fit-content;
+}
+
+nav {
+    width: fit-content;
+    align-self: center; 
+}
+
+.desktop-menu a {
+    font-size: 25px;
+    padding: 0 80px;
+    text-align: right;
+    text-decoration: none;
+    color: lightgray;
+}
+
+/* ITEMS POSITION */
+section {
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+
+aside {
+    width: 35%;
+    height: fit-content;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 100px 10px 30px 30px;
+    order: 1;
+}
+
+.background-image {
+    width: 70%;
+    order: 2;
+    background-image: url(../assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+article {
+    width: 70%;
+    float: right;
+    position: relative;
+}
+
+.clearfix::after {
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+footer {
+    display: none;
+}
+
+.mobile-version {
+    display: none;
+}
+
+/*ASIDE*/
+aside div {
+    margin-left: 30px;
+}
+
+h1, h2, .aside-content-wrapper {
+    width: 75%;
+}
+
+h1 {
+    font-size: 120px;
+    font-weight: 800;
+    line-height: 10px;
+    margin: 60px 0;
+}
+
+h2 {
+    font-size: 75px;
+    font-weight: 800;
+}
+
+.aside-content-wrapper {
+    box-sizing: border-box;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+    padding: 10px 0;
+}
+
+.navi-arrows-wrapper i {
+    box-sizing: border-box;
+    color: #f4dfc4;
+    border: 2px solid #f4dfc4 ;
+    font-size: 50px;
+    margin: 40px 5px;
+}
+
+.navi-arrows-wrapper i:first-child {
+    padding: 5px 25px 5px 20px;
+}
+
+.navi-arrows-wrapper i:last-child {
+    padding: 5px 20px 5px 25px;
+}
+
+
+/*BOX CONTENT*/
+.article-content-position {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.black-box-wrapper {
+    width: 40%;
+}
+
+.nude-box-wrapper {
+    width: 60%;
+    align-self: flex-start;
+}
+
+.black-box {
+    box-sizing: border-box;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+    margin-top: -70px;
+    background-color: black;
+}
+
+.nude-box {
+    box-sizing: border-box;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 0 60px;
+    background-color:#f4dfc4;
+}
+
+.weekend-title, .week-title, .design-holiday-title {
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+}
+
+.weekend-wrapper p, .week-wrapper p, .design-holiday-wrapper p {
+    font-size: 16px;
+    color: white;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid white;
+    align-items: flex-start;
+    padding: 5px 15px;
+    font-size: 20px;
+    color: white;
+}
+
+@media (max-width: 1100px) {
+    section {
+        flex-direction: column;
+    }    
+
+    .logo {
+        padding: 0 30px;
+        margin-left: 10px;
+    }    
+
+    .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu i {
+        display: block;
+        margin-right: 20px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .background-image {
+        width: 100%;
+        height: 650px;
+        background-position: center;
+        order: 1;
+    }
+
+    .mobile-version aside, .mobile-version div {
+        display: block;
+        width: 50%;
+    }
+
+    .mobile-version {
+        display: flex;
+        flex-direction: row-reverse;
+    } 
+
+    /*ASIDE MOBILE*/
+    .aside-mobile div {
+        width: 100%;
+    }
+
+    .mobile-version .aside-mobile div {
+        margin-left: 15px;
+    }
+
+    .aside-mobile {
+        box-sizing: border-box;
+        height: 450px;
+        padding-top: 80px;
+        padding-right: 40px;
+    } 
+
+    .aside-mobile h1, .aside-mobile h2, .aside-mobile .aside-content-wrapper {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 75px;
+        line-height: 10px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 5px;
+    }
+
+    .aside-content-wrapper {
+        font-size: 18px;
+    }
+
+    /*BOX CONTENT MOBILE*/
+    .black-box-mobile div {
+        width: 100%;
+    }
+
+    .black-box {
+        height: 450px;
+        margin: 0;
+        padding: 80px 60px;
+    }
+
+    .weekend-wrapper p, .week-wrapper p {
+        padding: 10px 0;
+        line-height: 25px;
+        font-size: 18px;
+    }
+
+    article {
+        display: none;
+    }
+
+    footer {
+        display: block;
+    }
+}
+
+
+@media (max-width:600px) {
+    header {
+        height: 80px;
+    }
+        
+    .logo {
+        padding: 0 30px;
+        margin-left: 10px;
+        font-size: 20px;
+    }    
+        
+    .mobile-menu i {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+        
+    .background-image {
+        width: 100%;
+        height: 300px;
+        order: 1;
+    }
+        
+    /*ASIDE MOBILE*/
+    .aside-mobile div {
+        width: 90%;
+    }
+        
+    .mobile-version .aside-mobile div {
+        margin-left: 2px;
+    }
+        
+    .aside-mobile {
+        height: 350px;
+        padding-right: 20px;
+        padding-top: 50px;
+    }      
+        
+    h1 {
+        font-size: 40px;
+    }
+        
+    h2 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+        
+    .aside-content-wrapper {
+        font-size: 11px;
+        line-height: 15px;
+    }
+        
+    /*BOX CONTENT MOBILE*/
+    .black-box {
+        height: 350px;
+        padding: 50px 40px;
+    }
+
+    .nude-box {
+        height: 160px;
+        padding: 30px 40px;
+    }
+    
+    .weekend-wrapper, .week-wrapper {
+        padding: 2px 0;
+    }
+
+    .weekend-title, .week-title, .design-holiday-title {
+        font-size: 25px;
+        line-height: 20px;
+    }
+        
+    .weekend-wrapper p, .week-wrapper p, .design-holiday-wrapper p {
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+}
