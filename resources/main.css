@@ -5,6 +5,7 @@ html, body {
     padding: 0;
 }
 
+/* font-family de obicei se mosteneste, deci cred ca ar fi mai ok sa dai pe un parinte si apoi exceptiile sa le gestionezi separat, pentru ca altfel de cate ori adaugi ceva in pagina trebuie sa vii si sa updatezi si lista asta */
 .logo, .desktop-menu, h1, h2, .weekend-title, .week-title, .design-holiday-title, button {
     font-family: 'EB Garamond', serif;
 }
