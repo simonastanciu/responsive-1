@@ -14,7 +14,6 @@
     </head>
     <body>
         <div class="main-page">
-
             <header>
                 <div class="logo"> Best Escapes </div>
                 <nav>
@@ -25,10 +24,23 @@
                         <a href="">Register/Login</a>
                     </div>
 
-                    <div class="mobile-menu">
+                    <div id="mobileMenu" class="mobile-menu">
                         <i class="fas fa-bars"></i>
                     </div>
                 </nav>
+
+                <div id="extendMenu" class="extend-menu hidden">
+                    <div class="top-header">
+                        <div class="logo">Best Escapes</div>
+                        <i id="closeButton" class="fas fa-times"></i>
+                    </div>
+                    <div class="mobile-menu-items">
+                        <a href="">Home</a>
+                        <a href="">Specials</a>
+                        <a href="">Last Minute</a>
+                        <a href="">Register/Login</a>
+                    </div>
+                </div>
             </header>
 
             <section>
@@ -124,5 +136,9 @@
                 </div>  
             </footer>
         </div>
+        <script src="resources/main.js"></script>
+        <noscript>
+            NO JS.
+        </noscript>
     </body>
 </html>

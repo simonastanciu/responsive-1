@@ -96,7 +96,7 @@ footer {
     display: none;
 }
 
-.mobile-version {
+.mobile-version, .hidden {
     display: none;
 }
 
@@ -244,6 +244,45 @@ button {
         flex-direction: row-reverse;
     } 
 
+    .extend-menu {
+        width: 100%;
+        height: 100%;
+        background-color:black;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .top-header {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .top-header .logo, .top-header i {
+        padding: 25px 40px;
+    }
+
+    .top-header i {
+        font-size: 40px;
+        color: orange;
+    }
+
+    .mobile-menu-items {
+        margin: 120px 35px;
+    }
+
+    .mobile-menu-items a {
+        font-size: 60px;
+        text-decoration: none;
+        letter-spacing: 4px;
+        font-family: 'GFS Neohellenic', sans-serif;
+        color: white;
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
     /*ASIDE MOBILE*/
     .aside-mobile div {
         width: 100%;
@@ -321,6 +360,24 @@ button {
     .mobile-menu i {
         font-size: 20px;
         margin-right: 10px;
+    }
+
+    .top-header .logo {
+        padding: 22px 30px;
+        font-size: 30px;
+    }
+
+    .top-header i {
+        padding: 25px 30px;
+        font-size: 30px;
+    }
+
+    .mobile-menu-items {
+        margin: 80px 20px;
+    }
+
+    .mobile-menu-items a {
+        font-size: 40px;
     }
         
     .background-image {
