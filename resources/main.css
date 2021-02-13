@@ -6,12 +6,8 @@ html, body {
 }
 
 /* font-family de obicei se mosteneste, deci cred ca ar fi mai ok sa dai pe un parinte si apoi exceptiile sa le gestionezi separat, pentru ca altfel de cate ori adaugi ceva in pagina trebuie sa vii si sa updatezi si lista asta */
-.logo, .desktop-menu, h1, h2, .weekend-title, .week-title, .design-holiday-title, button {
+.main-page {
     font-family: 'EB Garamond', serif;
-}
-
-.aside-content-wrapper, .weekend-wrapper p, .week-wrapper p, .design-holiday-wrapper p {
-    font-family: 'GFS Neohellenic', sans-serif;
 }
 
 /*MENU*/
@@ -127,6 +123,7 @@ h2 {
     line-height: 25px;
     text-align: justify;
     padding: 10px 0;
+    font-family: 'GFS Neohellenic', sans-serif;
 }
 
 .navi-arrows-wrapper i {
@@ -193,6 +190,7 @@ h2 {
 .weekend-wrapper p, .week-wrapper p, .design-holiday-wrapper p {
     font-size: 16px;
     color: white;
+    font-family: 'GFS Neohellenic', sans-serif;
 }
 
 button {
@@ -244,11 +242,12 @@ button {
         flex-direction: row-reverse;
     } 
 
+    /*MOBILE MENU*/
     .extend-menu {
         width: 100%;
         height: 100%;
         background-color:black;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
     }
@@ -281,6 +280,35 @@ button {
         padding: 15px 20px;
         display: flex;
         flex-direction: column;
+    }
+
+    .social-icons-position {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .social-icons-menu {
+        width: 100%;
+        height: 100px;
+        font-size: 50px;
+        color: darkgray;
+        display: flex;
+        justify-content: space-around;
+        border-top: 1px solid gray;
+        
+    }
+
+    .social-icons-menu i {
+        padding: 25px 0;
+    }
+
+    .social-icons-position hr {
+        width: 110px;
+        transform: rotate(90deg);
+        border: 1px solid gray;
+        position: relative;
+        bottom: 50px;
     }
 
     /*ASIDE MOBILE*/
