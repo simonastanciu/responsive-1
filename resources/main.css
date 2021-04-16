@@ -5,7 +5,6 @@ html, body {
     padding: 0;
 }
 
-/* font-family de obicei se mosteneste, deci cred ca ar fi mai ok sa dai pe un parinte si apoi exceptiile sa le gestionezi separat, pentru ca altfel de cate ori adaugi ceva in pagina trebuie sa vii si sa updatezi si lista asta */
 .main-page {
     font-family: 'EB Garamond', serif;
 }
@@ -295,8 +294,7 @@ button {
         color: darkgray;
         display: flex;
         justify-content: space-around;
-        border-top: 1px solid gray;
-        
+        border-top: 1px solid gray;   
     }
 
     .social-icons-menu i {
